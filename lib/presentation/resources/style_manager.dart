@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_clean_architecture/presentation/font_manager.dart';
+
+import 'font_manager.dart';
 
 // basic text style
 TextStyle _getTextStyle({
