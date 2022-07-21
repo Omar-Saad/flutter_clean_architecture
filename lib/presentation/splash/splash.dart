@@ -5,6 +5,8 @@ import 'package:flutter_clean_architecture/presentation/resources/assets_manager
 import 'package:flutter_clean_architecture/presentation/resources/color_manager.dart';
 import 'package:flutter_clean_architecture/presentation/resources/routes_manager.dart';
 
+import '../resources/app_constants.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
 
@@ -16,7 +18,8 @@ class _SplashScreenState extends State<SplashScreen> {
   Timer? _timer;
 
   void _startDelay() {
-    _timer = Timer(const Duration(seconds: 2), _navigateNext);
+    _timer = Timer(
+        const Duration(seconds: AppConstants.splashDuration), _navigateNext);
   }
 
   void _navigateNext() {

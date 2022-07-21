@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_clean_architecture/presentation/resources/color_manager.dart';
 import 'package:flutter_clean_architecture/presentation/resources/style_manager.dart';
 import 'package:flutter_clean_architecture/presentation/resources/values_manager.dart';
@@ -35,6 +36,11 @@ ThemeData getApplicationTheme() {
         shadowColor: ColorManager.primaryWithOpacity70,
         titleTextStyle: getRegularTextStyle(
             color: ColorManager.white, fontSize: FontSizeManager.s16),
+        systemOverlayStyle: SystemUiOverlayStyle(
+          statusBarColor: ColorManager.primary,
+          statusBarBrightness: Brightness.light,
+          statusBarIconBrightness: Brightness.light,
+        ),
       ),
 
       // button theme
@@ -58,16 +64,18 @@ ThemeData getApplicationTheme() {
 
       // text theme
       textTheme: TextTheme(
-          headline1: getSemiBoldTextStyle(
+          titleLarge: getSemiBoldTextStyle(
             color: ColorManager.darkGrey,
             fontSize: FontSizeManager.s16,
           ),
-          subtitle1: getMediumTextStyle(
-            color: ColorManager.lightGrey,
+          titleMedium: getMediumTextStyle(
+              color: ColorManager.primary, fontSize: FontSizeManager.s16),
+          headlineMedium: getRegularTextStyle(
+            color: ColorManager.darkGrey,
             fontSize: FontSizeManager.s14,
           ),
-          caption: getRegularTextStyle(color: ColorManager.grey1),
-          bodyText1: getRegularTextStyle(
+          displaySmall: getRegularTextStyle(color: ColorManager.grey1),
+          bodyMedium: getRegularTextStyle(
             color: ColorManager.grey,
           )),
 
