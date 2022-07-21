@@ -81,7 +81,7 @@ ThemeData getApplicationTheme() {
 
       // text form field style
       inputDecorationTheme: InputDecorationTheme(
-        contentPadding: EdgeInsets.all(AppPadding.p8),
+        contentPadding: const EdgeInsets.all(AppPadding.p8),
         hintStyle: getRegularTextStyle(color: ColorManager.grey1),
         labelStyle: getRegularTextStyle(
           color: ColorManager.darkGrey,

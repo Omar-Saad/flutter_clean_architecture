@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_clean_architecture/presentation/forgot_password/forgot_password.dart';
-import 'package:flutter_clean_architecture/presentation/onboarding/onboarding.dart';
+import 'package:flutter_clean_architecture/presentation/onboarding/view/onboarding.dart';
 import 'package:flutter_clean_architecture/presentation/resources/strings_manager.dart';
 import 'package:flutter_clean_architecture/presentation/splash/splash.dart';
 import 'package:flutter_clean_architecture/presentation/store_details/store_details.dart';
