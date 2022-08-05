@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_clean_architecture/domain/models.dart';
+import 'package:flutter_clean_architecture/domain/models/models.dart';
 import 'package:flutter_clean_architecture/presentation/onboarding/viewmodel/onboarding_viewmodel.dart';
 import 'package:flutter_clean_architecture/presentation/resources/app_constants.dart';
 
